@@ -2,7 +2,7 @@
   <div>
     <myHeader></myHeader>
     <h2 v-text="dat.title"></h2>
-    <p>发表于：{{dat.create_at | goodTime}}</p>
+    <p>作者：{{dat.author.loginname}}　　发表于：{{dat.create_at | goodTime}}</p>
     <hr>
     <article v-html="dat.content"></article>
     <h3>网友回复：</h3>
