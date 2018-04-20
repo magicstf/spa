@@ -6,6 +6,15 @@ import router from './router'
 
 // 引用API文件
 import api from './util/api.js'
+// 引入jsonp插件
+import VueJsonp from 'vue-jsonp'
+
+// import Hello from './components/hello'
+// Vue.use(Hello);
+// console.log(Hello);
+
+Vue.use(VueJsonp);
+
 // 将API方法绑定到全局
 Vue.prototype.$api = api
 

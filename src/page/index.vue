@@ -11,7 +11,7 @@
         </li>
       </ul>
     </div>
-    <Footer></Footer>
+    <Footer :myid="myid"></Footer>
   </div>
 </template>
 <script>
@@ -21,7 +21,8 @@ export default {
   components: { Header, Footer },
   data () {
     return {
-      list: []
+      list: [],
+      myid:3
     }
   },
   created () {
